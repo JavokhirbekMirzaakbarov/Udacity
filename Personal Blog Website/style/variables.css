@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --primary-bg-color: #edf0ee;
+
+  /* Breakpoints */
+  --card-width: 30%;
+  --columns: 3;
+  --blog-columns: 4fr;
+  --aside-columns: 1fr;
+}

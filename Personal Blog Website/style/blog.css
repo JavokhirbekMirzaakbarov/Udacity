@@ -1,0 +1,40 @@
+@import url("./variables.css");
+
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: var(--blog-columns) var(--aside-columns);
+  padding: 10px 100px 70px;
+  column-gap: 20px;
+}
+
+main h1 {
+  margin-bottom: 5px;
+}
+
+aside h3 {
+  font-style: italic;
+}
+
+aside ol,
+aside ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.image-wrapper {
+  /* width: 100%; */
+  margin: 10px 0px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .blog-wrapper {
+    grid-template-columns: 1fr;
+    padding: 10px 10px 70px;
+    column-gap: 0px;
+  }
+}
