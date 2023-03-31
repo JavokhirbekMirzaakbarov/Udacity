@@ -24,8 +24,9 @@ footer {
   background-color: var(--primary-bg-color);
   position: fixed;
   bottom: 0px;
-  text-align: center;
-  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-cards {
@@ -43,12 +44,16 @@ main {
   min-width: var(--card-width);
   margin: 10px;
   border: 2px solid var(--primary-bg-color);
-  box-shadow: 5px 5px 5px var(--primary-bg-color);
+  box-shadow: 5px 5px 5px var(--card-shadow-color);
   border-radius: 5px;
   padding: 25px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card-topic {
+  color: var(--card-topic-color);
 }
 
 .card h2 {

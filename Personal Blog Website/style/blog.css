@@ -22,13 +22,31 @@ aside ul {
 }
 
 .image-wrapper {
-  /* width: 100%; */
   margin: 10px 0px;
+}
+
+.image-wrapper figcaption {
+  font-style: italic;
 }
 
 img {
   width: 100%;
   object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.author-info .avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.author-name {
+  display: flex;
 }
 
 @media screen and (max-width: 900px) {

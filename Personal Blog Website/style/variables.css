@@ -1,6 +1,8 @@
 :root {
   /* Colors */
   --primary-bg-color: #edf0ee;
+  --card-topic-color: yellowgreen;
+  --card-shadow-color: #eee;
 
   /* Breakpoints */
   --card-width: 30%;
