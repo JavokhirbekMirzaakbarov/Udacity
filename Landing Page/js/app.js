@@ -53,13 +53,19 @@ const getActiveSection = () => {
 const updateActiveSection = () => {
   const activeSection = getActiveSection();
 
-  // Add "active" class to the active section
+  // Add "active" class to the active section and corresponding nav item
   activeSection.classList.add("active");
+  document
+    .querySelector(`li:has(a[href='#${activeSection.id}'])`)
+    .classList.add("active");
 
-  // Remove "active" class from all other sections
+  // Remove "active" class from all other sections and nav items
   sections.forEach((section) => {
     if (section !== activeSection) {
       section.classList.remove("active");
+      document
+        .querySelector(`li:has(a[href='#${section.id}'])`)
+        .classList.remove("active");
     }
   });
 };
@@ -103,6 +109,7 @@ navLinks.forEach((link) => {
     section.scrollIntoView({ behavior: "smooth" });
   });
 });
+
 /**
  * End Main Functions
  * Begin Events

@@ -65,6 +65,15 @@ section {
   display: inline-block;
 }
 
+.navbar__menu li.active {
+  background: rgb(175, 133, 226);
+  transition: ease 0.3s all;
+}
+
+.navbar__menu li.active a {
+  color: #fff;
+}
+
 .navbar__menu .menu__link {
   display: block;
   padding: 1em;
