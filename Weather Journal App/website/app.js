@@ -1,12 +1,12 @@
 /* Global Variables */
-const API_KEY = "19616e878dd33e53e4604cd18f7f6ae0";
+const API_KEY = "19616e878dd33e53e4604cd18f7f6ae0&units=metric";
 const BASE_URL = "http://api.openweathermap.org";
 const API_URL = "http://localhost:8080";
 
 // Create a new date instance dynamically with JS
 const getCurrentDate = () => {
   let d = new Date();
-  let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+  let newDate = d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear();
   return newDate;
 };
 
@@ -79,7 +79,7 @@ const displayTempData = async () => {
 
     // Displaying latest temp info
     date.innerHTML = lastItem.date;
-    temp.innerHTML = lastItem.temperature;
+    temp.innerHTML = lastItem.temperature + " Celcius";
     content.innerHTML = lastItem.userResponse;
   } catch (error) {
     alert(error);
