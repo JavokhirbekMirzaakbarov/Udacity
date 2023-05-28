@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluate Article</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="info">
+        <div class="title">Article Evaluator</div>
+        <div class="description">Evaluate articles with NLP</div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <form class="form" onsubmit="return Client.handleSubmit(event)">
+          <input
+            id="url"
+            type="text"
+            name="url"
+            value=""
+            placeholder="Enter article URL"
+          />
+          <input
+            type="submit"
+            name=""
+            value="Evaluate"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"
+          />
+        </form>
+        <div id="errors"></div>
+      </section>
+
+      <section class="results">
+        <h2>Evaluation Results</h2>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <footer>&copy; 2023</footer>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registration) => {
+              console.log('SW registered successfuly: ', registration);
+            });
+        });
+      } else {
+        console.log('Service Working not supported');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  input {
+    line-height: 1.2em;
+    font-size: 1.2em;
+    width: 80%;
+    padding: 10px;
+  }
+
+  input[type='submit'] {
+    width: 15%;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1.5rem;
+  }
+}

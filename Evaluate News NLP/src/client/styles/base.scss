@@ -1,0 +1,39 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  section {
+    border: 2px solid black;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+
+    & > h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    span {
+      display: inline-block;
+      padding: 1rem;
+    }
+  }
+}
+
+#errors {
+  margin-top: 0.5rem;
+  color: red;
+}

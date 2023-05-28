@@ -1,0 +1,21 @@
+header {
+  background-color: black;
+  color: white;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    .title {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+    }
+  }
+}
