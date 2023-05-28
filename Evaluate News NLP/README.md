@@ -47,6 +47,6 @@ $ npm run start
 
 ## Screenshots
 
-![Overview](/images/overview.png 'Overview of the app')
+![Overview](https://github.com/JavokhirbekMirzaakbarov/Udacity/blob/main/Evaluate%20News%20NLP/images/overview.jpg)
 
-![Overview](/images/success.png 'Sample response')
+![Overview](https://github.com/JavokhirbekMirzaakbarov/Udacity/blob/main/Evaluate%20News%20NLP/images/success.jpg)
