@@ -1,0 +1,147 @@
+body {
+  background: #e1f8dc;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: black;
+  justify-content: center;
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .interaction {
+    height: 100vh;
+    width: 50vw;
+
+    .form {
+      height: 100vh;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      #city {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: block;
+        font-size: 1.5rem;
+      }
+
+      input {
+        display: block;
+        padding: 5px;
+        height: 2rem;
+        width: 25rem;
+        font-size: 1.25rem;
+        border-radius: 8px;
+        border: 1.5px solid black;
+        cursor: pointer;
+      }
+
+      button {
+        margin-top: 1rem;
+        width: 8rem;
+        height: 3rem;
+        background: black;
+        color: white;
+        font-size: 1.25rem;
+        box-shadow: 2px 4px 5px #444;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      #container {
+        padding: 1rem;
+        height: 50vh;
+
+        p {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-size: 1.5rem;
+          margin: 0;
+        }
+
+        #city-image {
+          width: 50%;
+        }
+
+        #content {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: stretch;
+
+          #icon {
+            width: 2.5rem;
+          }
+
+          #content-text {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    #app {
+      flex-direction: column;
+
+      .interaction {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+
+        .form {
+          justify-content: flex-start;
+          margin: 10vh auto;
+          height: 40vh;
+        }
+      }
+
+      .headline {
+        width: 100%;
+        margin-top: 5vh;
+      }
+
+      #icon {
+        width: 2.5rem;
+      }
+
+      #content-text {
+        padding-right: 0;
+      }
+    }
+  }
+}

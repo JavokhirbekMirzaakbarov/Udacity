@@ -1,0 +1,6 @@
+node_modules
+dist/
+.vscode/launch.json
+.env
+.prettierrc
+**/.DS_Store

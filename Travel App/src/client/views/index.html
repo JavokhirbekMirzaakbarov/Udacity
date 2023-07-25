@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Travel</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="holder headline">Your Travel</h1>
+      <section class="interaction">
+        <div class="form" id="form">
+          <label for="zip">Enter City</label>
+          <input type="text" id="city" placeholder="Tashkent" />
+          <label for="date">Enter Date</label>
+          <input type="date" id="date" />
+          <button id="generate" type="submit">Generate</button>
+        </div>
+        <div id="container">
+          <h2 class="title" id="title">Your Next Trip</h2>
+        </div>
+      </section>
+    </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>
